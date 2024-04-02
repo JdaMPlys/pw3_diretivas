@@ -1,0 +1,18 @@
+<!-- <ol>
+  <li>Mucho texto</li>
+  <li>Mucho texto</li>
+  <li>Mucho texto</li>
+  <li  *ngIf="autenticado2">Preguiça de criar um novo texto</li>
+</ol>
+<button (click)="autenticar2()">Login</button> -->
+
+<div [ngSwitch]="numero">
+
+  <div *ngSwitchCase="1" class="block1">Valor é {{ numero }}</div>
+  <div *ngSwitchCase="2" class="block2">Valor é {{ numero }}</div>
+  <div *ngSwitchCase="3" class="block3">Valor é {{ numero }}</div>
+  <div *ngSwitchDefault class="block4">Valor é {{ numero }}</div>
+
+</div>
+
+<button (click)="incrementar()">Incrementar</button>
